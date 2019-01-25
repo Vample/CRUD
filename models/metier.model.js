@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 var metierSchema = new mongoose.Schema({
-    fullName: {
+    jobName: {
         type: String
     },
-    mobile: {
+    codeNumber: {
         type: String
     }
 });
