@@ -2,10 +2,12 @@ const mongoose = require('mongoose');
 
 var metierSchema = new mongoose.Schema({
     jobName: {
-        type: String
+        type: String,
+        required: 'Ce champs est obligatoire.'
     },
     codeNumber: {
-        type: String
+        type: String,
+        required: 'Ce champs est obligatoire.'
     }
 });
 

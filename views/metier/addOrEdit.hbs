@@ -2,14 +2,16 @@
 <form action="/metier" method="post">
     <div class="form-group">
         <label>Nom du travail</label>
-        <input type="text" class="form-control" name="jobName" placeholder="Job Name">
-
+        <input type="text" class="form-control" name="jobName" placeholder="Nom métier" value="{{metier.jobName}}">
+        <div class="text-danger">{{metier.jobNameError}}</div>
         <div class="form-group">
             <label>Numero</label>
-            <input type="text" class="form-control" name="codeNumber" placeholder="Code Number">
+            <input type="text" class="form-control" name="codeNumber" placeholder="Numéro" value="{{metier.codeNumber}}">
+            <div class="text-danger">{{metier.codeNumberError}}</div>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Envoyer</button>
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Envoyer</button>
+            <a class="btn btn-secondary" href="/metier/list"><i class="fa fa-list-alt"></i> Afficher liste</a>
         </div>
     </div>
 </form>

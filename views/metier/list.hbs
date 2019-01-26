@@ -1,0 +1,22 @@
+<h3><a class="btn btn-secondary" href="/metier"><i class="fa fa-plus"></i> Insérer métier</a> Liste de métiers</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Nom du métier</th>
+        <th>Numéro</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this.jobName}}</td>
+                <td>{{this.codeNumber}}</td>
+                <td>
+                    <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
