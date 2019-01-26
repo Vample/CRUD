@@ -1,11 +1,12 @@
 <h3>{{viewTitle}}</h3>
 <form action="/metier" method="post">
+    <input type="hidden" name="_id" value="{{metier._id}}">
     <div class="form-group">
-        <label>Nom du travail</label>
+        <label>Nom du métier</label>
         <input type="text" class="form-control" name="jobName" placeholder="Nom métier" value="{{metier.jobName}}">
         <div class="text-danger">{{metier.jobNameError}}</div>
         <div class="form-group">
-            <label>Numero</label>
+            <label>Numéro</label>
             <input type="text" class="form-control" name="codeNumber" placeholder="Numéro" value="{{metier.codeNumber}}">
             <div class="text-danger">{{metier.codeNumberError}}</div>
         </div>
